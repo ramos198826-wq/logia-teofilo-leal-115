@@ -1,0 +1,300 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f1ea;
+  color: #1f1f1f;
+}
+
+/* Evita que el menú fijo tape el contenido al navegar */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Forma elegante del texto */
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ===== ENCABEZADO PRINCIPAL ===== */
+.header {
+  background: linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.9)),
+              url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.subtitulo {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #d4c8a3;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: logoEntrada 1s ease forwards;
+}
+
+@keyframes logoEntrada {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== NOMBRE DE LA LOGIA ===== */
+.nombre-logia {
+  font-size: 16px;
+  color: #d4af37;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.nombre-logia strong {
+  display: block;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.nombre-logia span {
+  font-size: 14px;
+  color: #ffffffcc;
+}
+
+/* ===== MENÚ DE NAVEGACIÓN ===== */
+.nav {
+  background: #1e2a44;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: hsl(46, 65%, 52%);
+}
+
+/* ===== BOTÓN ASPIRANTES ===== */
+.boton-aspirantes {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.boton-aspirantes:hover {
+  background: #d4af37;
+  color: #1f2a44;
+  transform: scale(1.05);
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== TARJETAS ===== */
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 0.8s ease forwards;
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1f2a44;
+  text-align: center;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== BOTÓN BLOG ===== */
+.boton-blog {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: transparent;
+  color: #1e2a44;
+  border: 2px solid #1e2a44;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.boton-blog:hover {
+  background: #d4af37;
+  color: #1e2a44;
+  border-color: #d4af37;
+}
+
+/* ===== REDES SOCIALES GENERALES ===== */
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales a {
+  color: #d4af37;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: white;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.footer {
+  background: #1f2a44;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-titulo {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.footer-ubicacion {
+  font-size: 14px;
+  color: #d4c8a3;
+}
+
+.footer-redes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-redes a {
+  color: #d4af37;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.footer-redes a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .boton-aspirantes {
+    margin-top: 10px;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .nombre-logia strong {
+    font-size: 18px;
+  }
+}
