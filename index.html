@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logia Teofilo Leal 115</title>
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="icon" href="logo.png">
 </head>
 <body>
@@ -22,7 +24,6 @@
 
     <a href="https://wa.me/584245056324?text=Hola%20quiero%20información%20sobre%20la%20logia"
        target="_blank"
-       rel="noopener noreferrer"
        class="boton-aspirantes">
        Información para Aspirantes
     </a>
@@ -40,16 +41,18 @@
 
   <main class="contenedor">
 
-   <section class="tarjeta principal">
-  <h2>Bienvenidos</h2>
-  <!-- Aquí caerá la frase de la API -->
-  <p id="mensaje">Cargando pensamiento...</p> 
-  
-  <!-- Reutilizamos tu estilo de botón para que combine perfecto -->
-  <button id="btn-cambiar" class="boton-blog" style="cursor:pointer; font-size: 0.8rem;">
-    <i class="fas fa-sync-alt"></i> Inspiración
-  </button>
-</section>
+    <!-- 🔥 BIENVENIDOS CORREGIDO -->
+    <section class="tarjeta bienvenida" id="bienvenidos">
+      <h2>Bienvenidos</h2>
+
+      <p>Bienvenidos a este espacio.</p>
+
+      <button id="btn-cambiar">Inspiración</button>
+
+      <div id="mensaje">
+        <em>Pulsa el botón para mostrar un mensaje.</em>
+      </div>
+    </section>
 
     <section class="tarjeta" id="masoneria">
       <h2>¿Qué es la Masonería?</h2>
@@ -96,7 +99,7 @@
 
     <section class="tarjeta" id="actividades">
       <h2>Actividades</h2>
-      <ul id="listaNombres">
+      <ul>
         <li>Tenidas regulares</li>
         <li>Docencia masónica</li>
         <li>Actividades fraternas</li>
@@ -104,7 +107,6 @@
 
       <a href="https://drcvictorcolinao.blogspot.com/2026/04/dia-masonico-nacional-en-lara-28-de.html"
          target="_blank"
-         rel="noopener noreferrer"
          class="boton-blog">
          Blog de Actividades
       </a>
@@ -120,15 +122,15 @@
       </div>
 
       <div class="footer-redes">
-        <a href="https://www.instagram.com/logiateofiloleal115/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/logiateofiloleal115/" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
 
-        <a href="https://www.facebook.com/logiateofilo.leal.5" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/logiateofilo.leal.5" target="_blank">
           <i class="fab fa-facebook"></i>
         </a>
 
-        <a href="https://mail.google.com/mail/?view=cm&to=logiateofiloleal115@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://mail.google.com/mail/?view=cm&to=logiateofiloleal115@gmail.com" target="_blank">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
@@ -137,6 +139,8 @@
     <p class="footer-copy">© 2026 Todos los derechos reservados.</p>
   </footer>
 
+  <!-- 🔥 SCRIPT SOLO AQUÍ -->
   <script src="js/app.js"></script>
+
 </body>
 </html>
