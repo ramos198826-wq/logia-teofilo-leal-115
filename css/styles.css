@@ -1,3 +1,4 @@
+
 /* ===== CONFIGURACIÓN GENERAL ===== */
 html {
   scroll-behavior: smooth;
@@ -10,14 +11,11 @@ body {
   color: #1f1f1f;
 }
 
-/* Evita que el menú fijo tape el contenido al navegar */
 section {
   scroll-margin-top: 80px;
 }
 
-/* Forma elegante del texto */
-h1,
-h2 {
+h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -25,7 +23,7 @@ p {
   line-height: 1.6;
 }
 
-/* ===== ENCABEZADO PRINCIPAL ===== */
+/* ===== ENCABEZADO ===== */
 .header {
   background: linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.9)),
               url("../img/fondo.jpg");
@@ -62,7 +60,7 @@ p {
   }
 }
 
-/* ===== NOMBRE DE LA LOGIA ===== */
+/* ===== NOMBRE ===== */
 .nombre-logia {
   font-size: 16px;
   color: #d4af37;
@@ -81,7 +79,7 @@ p {
   color: #ffffffcc;
 }
 
-/* ===== MENÚ DE NAVEGACIÓN ===== */
+/* ===== NAV ===== */
 .nav {
   background: #1e2a44;
   padding: 10px 20px;
@@ -111,7 +109,7 @@ p {
 }
 
 .nav a:hover {
-  color: hsl(46, 65%, 52%);
+  color: #d4af37;
 }
 
 /* ===== BOTÓN ASPIRANTES ===== */
@@ -130,7 +128,7 @@ p {
   transform: scale(1.05);
 }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
+/* ===== CONTENEDOR ===== */
 .contenedor {
   max-width: 900px;
   margin: 30px auto;
@@ -157,10 +155,6 @@ p {
   text-align: center;
 }
 
-.tarjeta ul {
-  padding-left: 20px;
-}
-
 @keyframes aparecer {
   to {
     opacity: 1;
@@ -168,92 +162,45 @@ p {
   }
 }
 
-/* ===== BOTÓN BLOG ===== */
-.boton-blog {
-  display: inline-block;
+/* ===== MENSAJE BIENVENIDOS (ARREGLADO) ===== */
+#mensaje {
   margin-top: 15px;
-  padding: 10px 18px;
-  background: transparent;
-  color: #1e2a44;
-  border: 2px solid #1e2a44;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+  padding: 15px;
+  background-color: #f9f7f2;
+  border-left: 4px solid #8b6f47;
+  border-radius: 8px;
+  color: #1f1f1f;
+  font-size: 16px;
+  min-height: 50px;
 }
 
-.boton-blog:hover {
-  background: #d4af37;
+#mensaje em {
   color: #1e2a44;
-  border-color: #d4af37;
+  font-style: italic;
 }
 
-/* ===== REDES SOCIALES GENERALES ===== */
-.redes-sociales {
+/* ===== BOTÓN MENSAJE ===== */
+#btn-cambiar {
   margin-top: 10px;
-}
-
-.redes-sociales a {
-  color: #d4af37;
-  margin: 0 10px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.redes-sociales a:hover {
+  padding: 8px 14px;
+  background: #8b6f47;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-/* ===== PIE DE PÁGINA ===== */
+#btn-cambiar:hover {
+  background: #a3875d;
+}
+
+/* ===== FOOTER ===== */
 .footer {
   background: #1f2a44;
   color: white;
   padding: 30px 20px;
   text-align: center;
   margin-top: 30px;
-}
-
-.footer-contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: auto;
-}
-
-.footer-info {
-  text-align: left;
-}
-
-.footer-titulo {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.footer-ubicacion {
-  font-size: 14px;
-  color: #d4c8a3;
-}
-
-.footer-redes {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-redes a {
-  color: #d4af37;
-  margin: 0 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.footer-redes a:hover {
-  color: white;
-  transform: scale(1.2);
 }
 
 .footer-copy {
@@ -274,20 +221,6 @@ p {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-  }
-
-  .boton-aspirantes {
-    margin-top: 10px;
-  }
-
-  .footer-contenido {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .footer-info {
-    text-align: center;
   }
 
   .logo {
